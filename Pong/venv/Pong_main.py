@@ -5,7 +5,7 @@ from Paddle import paddle
 
 class Pong:
 
-    screen_height = 500
+    screen_height = 600
     screen_width = 900
 
     paddle_h = 100
@@ -100,8 +100,8 @@ class Pong:
 
             text1 = font.render("Player one: " + str(paddle_1.get_score()), True, (0, 128, 0))
             text2 = font.render("Player two: " + str(paddle_2.get_score()), True, (0, 128, 0))
-            self.window.blit(text1, (0,self.screen_height-20))
-            self.window.blit(text2, (self.screen_width-115, self.screen_height-20))
+            self.window.blit(text1, (0,self.screen_height-70))
+            self.window.blit(text2, (self.screen_width-180, self.screen_height-70))
 
             paddle_1.move(self.screen_height)
             pygame.draw.rect(self.window,self.paddle_color,paddle_1)
