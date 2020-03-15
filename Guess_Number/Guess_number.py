@@ -27,7 +27,7 @@ def check_number(secret_number):
 					print(f'The {guess_number} is wrong!')
 					print(f'Please try again and you guessed {count_guesses}!')
 				elif int(guess_number) == secret_number:
-					print(f'Congratualtions you are right and you guessed {count_guesses}!')
+					print(f'Congratulations you are right and you guessed {count_guesses}!')
 					print(f'The number {guess_number} is the same as the secret number: {secret_number}')
 					break
 	
