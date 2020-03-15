@@ -20,7 +20,7 @@ def check_number(secret_number):
 			while True:
 				guess_number = input('Guess an number please! ')
 				if not(guess_number.isnumeric()):
-					while not(guess_number.isnumeric()):
+					while not guess_number.isnumeric():
 						guess_number = input('Please enter an valid number and not letters! ')
 				if int(guess_number) != secret_number:
 					count_guesses += 1
