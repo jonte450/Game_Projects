@@ -9,10 +9,7 @@ def random_number(num1,num2):
 
 def check_first_last(num1,num2):
 	if first.isdigit() == True and last.isdigit() == True:
-		if first < last:
-			return True
-	else:
-		return False
+		return first < last
 
 
 def check_number(secret_number):
