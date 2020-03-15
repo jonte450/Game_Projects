@@ -15,7 +15,7 @@ def check_first_last(num1,num2):
 def check_number(secret_number):
 			count_guesses = 0
 			while True:
-				guess_number = input('Guess an number please! ')
+				guess_number = input('Guess a number please! ')
 				if not(guess_number.isnumeric()):
 					while not guess_number.isnumeric():
 						guess_number = input('Please enter an valid number and not letters! ')
