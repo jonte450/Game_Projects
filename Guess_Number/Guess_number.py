@@ -8,8 +8,7 @@ def random_number(num1,num2):
 	return random.randint(num1,num2)
 
 def check_first_last(num1,num2):
-	if first.isdigit() == True and last.isdigit() == True:
-		return first < last
+	return num1.isdigit() and num2.isdigit() and int(num1) < int(num2)
 
 
 def check_number(secret_number):
