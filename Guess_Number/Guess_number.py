@@ -27,10 +27,12 @@ def check_number(secret_number):
 					print(f'The number {guess_number} is the same as the secret number: {secret_number}')
 					break
 	
-if first.isdigit() == True and last.isdigit() == True:
-	if first < last:
-		secret_number = random_number(int(first),int(last))
-		check_number(secret_number)
+if check_first_last(first,last):
+	secret_number = random_number(int(first),int(last))
+	check_number(secret_number)
+else:
+	print('Please enter valid number inputs!')
+	print('Please press c to continue try enter valid numbers!')
 
 while True:
 	check_answer = input('Do you want to continue press c or do you want to quit press q: ')
